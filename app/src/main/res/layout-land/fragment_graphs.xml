@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:id="@+id/swipeRefreshLayoutGraphs">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/layout_graphs"
+            android:background="#17BD86ED"
+            android:paddingBottom="60dp">
+
+            <TextView
+                android:id="@+id/textViewCaricamentoGrafici"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center|center_horizontal"
+                android:text="Caricamento.."
+                android:background="#000730"
+                android:layout_marginBottom="20dp"
+                android:textColor="#FFFFFF"
+                android:textSize="21sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <TextView
+                android:id="@+id/textView_titolo_grafo_nuovi_positivi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:layout_below="@+id/textViewCaricamentoGrafici"
+                android:text="ANDAMENTO NAZIONALE"
+                android:textColor="#FF5722"
+                android:textSize="18sp"
+                android:textStyle="bold|italic" />
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/linechart_andamento_nazionale"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_below="@id/textView_titolo_grafo_nuovi_positivi"
+                >
+            </com.github.mikephil.charting.charts.LineChart>
+
+            <TextView
+                android:id="@+id/textView_titolo_grafo_andamento_globale"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linechart_andamento_nazionale"
+                android:layout_marginTop="50dp"
+                android:gravity="center_horizontal"
+                android:padding="5dp"
+                android:text="NUOVI POSITIVI"
+                android:textColor="#FF5722"
+                android:textSize="18sp"
+                android:textStyle="bold|italic" />
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/linechart_casi"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_below="@id/textView_titolo_grafo_andamento_globale">
+            </com.github.mikephil.charting.charts.LineChart>
+
+            <TextView
+                android:id="@+id/textView_titolo_situazione_contagiati"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linechart_casi"
+                android:layout_marginTop="50dp"
+                android:gravity="center_horizontal"
+                android:padding="5dp"
+                android:text="SITUAZIONE CONTAGIATI"
+                android:textColor="#FF5722"
+                android:textSize="18sp"
+                android:textStyle="bold|italic" />
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:id="@+id/piechart"
+                android:layout_below="@id/textView_titolo_situazione_contagiati"
+                android:gravity="center" />
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

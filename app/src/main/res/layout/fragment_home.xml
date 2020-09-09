@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:id="@+id/swipeRefreshLayoutGlobale">
+    
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#17BD86ED"
+            android:paddingBottom="60dp">
+
+
+            <TextView
+                android:id="@+id/textView_data_aggioramento_globale"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:gravity="center|center_horizontal"
+                android:text="Aggiornato in data: Caricamento.."
+                android:background="#000730"
+                android:textColor="#FFFFFF"
+                android:textSize="21sp"
+                android:textStyle="bold"
+                android:typeface="serif"/>
+
+            <TextView
+                android:id="@+id/textView_testo_totale_casi_globale"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView_data_aggioramento_globale"
+                android:layout_marginTop="0dp"
+                android:background="#40FF0000"
+                android:gravity="center_horizontal"
+                android:padding="5dp"
+                android:text="TOTALE CASI"
+                android:textColor="#FF0000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="17dp"
+                tools:layout_editor_absoluteY="1" />
+
+            <TextView
+                android:id="@+id/textView_totale_casi_globale"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView_testo_totale_casi_globale"
+                android:gravity="center_horizontal"
+                android:padding="5dp"
+                android:text="Caricamento.."
+                android:background="#40FF0000"
+                android:textColor="#FF0000"
+                android:textSize="50dp"
+                android:textStyle="italic" />
+
+
+            <TextView
+                android:id="@+id/textView_testo_totale_attualmente_positivi_globale"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView_totale_casi_globale"
+                android:background="#66FF9800"
+                android:gravity="center_horizontal"
+                android:padding="5dp"
+                android:layout_marginTop="10dp"
+                android:text="TOTALE POSITIVI"
+                android:textColor="#FF9800"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="17dp"
+                tools:layout_editor_absoluteY="1" />
+
+            <TextView
+                android:id="@+id/textView_totale_attualmente_positivi_globale"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView_testo_totale_attualmente_positivi_globale"
+                android:background="#66FF9800"
+                android:gravity="center_horizontal"
+                android:padding="5dp"
+                android:text="Caricamento.."
+                android:textColor="#FF9800"
+                android:textSize="50dp"
+                android:textStyle="italic"
+                tools:layout_editor_absoluteX="17dp"
+                tools:layout_editor_absoluteY="1" />
+
+            <TextView
+                android:id="@+id/textView_testo_deceduti_globale"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView_totale_attualmente_positivi_globale"
+                android:background="#66000000"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:text="DECEDUTI"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="17dp"
+                tools:layout_editor_absoluteY="1" />
+
+            <TextView
+                android:id="@+id/textView_deceduti_globale"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView_testo_deceduti_globale"
+                android:background="#66000000"
+                android:gravity="center_horizontal"
+                android:padding="5dp"
+                android:text="Caricamento.."
+                android:textColor="#000000"
+                android:textSize="50dp"
+                android:textStyle="italic"
+                tools:layout_editor_absoluteX="17dp"
+                tools:layout_editor_absoluteY="1" />
+
+
+            <TextView
+                android:id="@+id/textView_testo_dimessi_guariti_globale"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView_deceduti_globale"
+                android:background="#664CAF50"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:text="DIMESSI GUARITI"
+                android:textColor="#4CAF50"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="17dp"
+                tools:layout_editor_absoluteY="1" />
+
+            <TextView
+                android:id="@+id/textView_dimessi_guariti_globale"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView_testo_dimessi_guariti_globale"
+                android:background="#664CAF50"
+                android:gravity="center_horizontal"
+                android:padding="5dp"
+                android:text="Caricamento.."
+                android:textColor="#4CAF50"
+                android:textSize="50dp"
+                android:textStyle="italic"
+                tools:layout_editor_absoluteX="17dp"
+                tools:layout_editor_absoluteY="1" />
+
+            <TextView
+                android:id="@+id/textView_testo_ricoverati_con_sintomi_globale"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView_dimessi_guariti_globale"
+                android:background="#66009688"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:text="RICOVERATI CON SINTOMI"
+                android:textColor="#009688"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="17dp"
+                tools:layout_editor_absoluteY="1" />
+
+            <TextView
+                android:id="@+id/textView_ricoverati_con_sintomi_globale"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView_testo_ricoverati_con_sintomi_globale"
+                android:background="#66009688"
+                android:gravity="center_horizontal"
+                android:padding="5dp"
+                android:text="Caricamento.."
+                android:textColor="#009688"
+                android:textSize="50dp"
+                android:textStyle="italic"
+                tools:layout_editor_absoluteX="17dp"
+                tools:layout_editor_absoluteY="1" />
+
+
+            <TextView
+                android:id="@+id/textView_testo_terapia_intensiva_globale"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView_ricoverati_con_sintomi_globale"
+                android:background="#663D0A8C"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:text="TERAPIA INTENSIVA"
+                android:textColor="#3D0A8C"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="17dp"
+                tools:layout_editor_absoluteY="1" />
+
+            <TextView
+                android:id="@+id/textView_terapia_intensiva_globale"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView_testo_terapia_intensiva_globale"
+                android:background="#663D0A8C"
+                android:gravity="center_horizontal"
+                android:padding="5dp"
+                android:text="Caricamento.."
+                android:textColor="#3D0A8C"
+                android:textSize="50dp"
+                android:textStyle="italic"
+                tools:layout_editor_absoluteX="17dp"
+                tools:layout_editor_absoluteY="1" />
+
+            <TextView
+                android:id="@+id/textView_testo_totale_ospedalizzati"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView_terapia_intensiva_globale"
+                android:background="#669A558E"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:text="OSPEDALIZZATI"
+                android:textColor="#9A558E"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="17dp"
+                tools:layout_editor_absoluteY="1" />
+
+            <TextView
+                android:id="@+id/textView_totale_ospedalizzati"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView_testo_totale_ospedalizzati"
+                android:background="#669A558E"
+                android:gravity="center_horizontal"
+                android:padding="5dp"
+                android:text="Caricamento.."
+                android:textColor="#9A558E"
+                android:textSize="50dp"
+                android:textStyle="italic"
+                tools:layout_editor_absoluteX="17dp"
+                tools:layout_editor_absoluteY="1" />
+
+            <TextView
+                android:id="@+id/textView_testo_isolamento_domiciliare"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView_totale_ospedalizzati"
+                android:background="#665F75ED"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:text="ISOLAMENTO DOMICILIARE"
+                android:textColor="#FF5F75ED"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="17dp"
+                tools:layout_editor_absoluteY="1" />
+
+            <TextView
+                android:id="@+id/textView_isolamento_domiciliare"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView_testo_isolamento_domiciliare"
+                android:background="#665F75ED"
+                android:gravity="center_horizontal"
+                android:padding="5dp"
+                android:text="Caricamento.."
+                android:textColor="#FF5F75ED"
+                android:textSize="50dp"
+                android:textStyle="italic"
+                tools:layout_editor_absoluteX="17dp"
+                tools:layout_editor_absoluteY="1" />
+
+            <TextView
+                android:id="@+id/textView_testo_tamponi"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView_isolamento_domiciliare"
+                android:background="#66E91E63"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:text="TAMPONI"
+                android:textColor="#E91E63"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="17dp"
+                tools:layout_editor_absoluteY="1" />
+
+            <TextView
+                android:id="@+id/textView_tamponi"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView_testo_tamponi"
+                android:background="#66E91E63"
+                android:gravity="center_horizontal"
+                android:paddingTop="5dp"
+                android:text="Caricamento.."
+                android:textColor="#E91E63"
+                android:textSize="50dp"
+                android:textStyle="italic"
+                tools:layout_editor_absoluteX="17dp"
+                tools:layout_editor_absoluteY="1"/>
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

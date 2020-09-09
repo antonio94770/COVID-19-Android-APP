@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">COVID-19 Andamento Nazionale</string>
+    <string name="andamento_nazionale_covid_19">Andamento Nazionale COVID-19</string>
+    <string name="aggiornato_in_data">Aggiornato in data</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+</resources>

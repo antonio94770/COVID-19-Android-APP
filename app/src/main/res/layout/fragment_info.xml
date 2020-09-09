@@ -1,0 +1,94 @@
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#17BD86ED"
+        android:paddingBottom="60dp">
+
+        <TextView
+            android:id="@+id/title_sezioni_app"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_horizontal"
+            android:text="SEZIONI APP"
+            android:textColor="#000730"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/spiegazione_sezioni"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/title_sezioni_app"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="left"
+            android:text=""
+            android:textColor="#070540"
+            android:textSize="14sp"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/title_spiegazione_dati"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/spiegazione_sezioni"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_horizontal"
+            android:text="SIGNIFICATO DATI"
+            android:textColor="#000730"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/spiegazione_dati"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/title_spiegazione_dati"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="left"
+            android:text=""
+            android:textColor="#070540"
+            android:textSize="14sp"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/title_spiegazione_raccolta_dati"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/spiegazione_dati"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_horizontal"
+            android:text="RACCOLTA DATI"
+            android:textColor="#000730"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/spiegazione_raccolta_dati"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/title_spiegazione_raccolta_dati"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="left"
+            android:linksClickable="true"
+            android:text=""
+            android:textColor="#070540"
+            android:textSize="14sp"
+            android:typeface="serif" />
+
+
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>
